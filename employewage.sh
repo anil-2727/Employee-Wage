@@ -1,4 +1,4 @@
-# Welcome to Employee Wage Computation Program on Master Branch
+ Welcome to Employee Wage Computation Program on Master Branch
 
 x=$((RANDOM%2))
 case "$x" in
@@ -18,9 +18,15 @@ W=$((4+((4*$((RANDOM%2))))))
 case "$W" in
 "8")
 echo wage for fullday: "$(($fulldayhour*$wagephour))"
+echo wage of a month "$((20* $(($fulldayhour*$wagephour))))"
+
 ;;
 "4")
 echo part time wage  : "$(($parttimehour*$wagephour))"
+echo wage of a month "$((20* $(($parttimehour*$wagephour))))"
+
 ;;
 esac
+
+
 
