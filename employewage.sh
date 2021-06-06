@@ -1,10 +1,13 @@
 # Welcome to Employee Wage Computation Program on Master Branch
 
-ispresent=1
 x=$((RANDOM%2))
-if [ $x -eq 1 ]
+if [[ $x -eq 1 ]];
 then
-echo " employe is present"
-else 
-echo "employe is absent"
+echo "employee is present"
+else
+echo "employee is absent"
 fi
+
+fulldhr=8
+wageperhr=20
+echo Fullday Employee Wage is: "$(($fulldhr*$wageperhr))"
